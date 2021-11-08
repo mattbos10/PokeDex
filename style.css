@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -17,4 +19,41 @@ h1 {
     padding: 10px;
     letter-spacing: 5px;
     border-radius: 25px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+/* styles for img container are in js file */
+
+#container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pokemon {
+    background-color: #3d7dca;
+    width: 175px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #003a70;
+    border-radius: 20px;
+}
+
+.name {
+    color: #003a70;
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin-bottom: 0;
+}
+
+.img-container {
+    background-color: #003a70;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
 }
