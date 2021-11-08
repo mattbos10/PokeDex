@@ -34,8 +34,10 @@ async function getPokemonData(id) {
 // NOTE: Using async/await on this function because the code in the getPokemonData function is asychronous (there is an Axios request within that function)
 async function getPokemon() {
     for(i = 1; i <= numOfPokemon; i++){
+        console.log(i);
         await getPokemonData(i);
     }
 }
 
+// Running the getPokemon function which runs the getPokemonData function each time through the loop
 getPokemon();
